@@ -1,0 +1,37 @@
+package {
+	import flash.display.MovieClip;
+	import flash.display.Sprite;
+	import flash.events.Event;
+	/**
+	 * @author Djamali
+	 */
+	public class Game extends Sprite{
+		
+		private var _paddlePlayer:Player;
+		private var _paddleCPU:MovieClip;
+		private var _ball:MovieClip;
+		
+		public function Game() {
+			super();
+			addEventListener(Event.ADDED_TO_STAGE, init);
+			//addEventListener(Event.ENTER_FRAME, update);
+		}
+		
+		private function init(e:Event = null):void {
+			removeEventListener(Event.ADDED_TO_STAGE, init);
+			
+			_paddlePlayer = new Player();
+			addChild(_paddlePlayer);
+			
+			_paddleCPU = new Paddle();
+			addChild(_paddleCPU);
+			_paddleCPU.x = 750;
+			_paddleCPU.y = stage.stageHeight/2;
+			
+			_ball = new Ball();
+			addChild(_ball);
+			_ball.x = stage.stageWidth / 2;
+			_ball.y = stage.stageHeight / 2;
+		}
+	}
+}

@@ -1,0 +1,65 @@
+package {
+	import flash.display.MovieClip;
+	import flash.events.Event;
+	import flash.display.Sprite;
+	import flash.events.KeyboardEvent;
+	/**
+	 * @author Djamali
+	 */
+	public class Player extends Sprite{
+		
+		private var paddle:MovieClip;
+		private var direction:int = 0;
+		
+		public function Player():void {
+			if(stage) (init());
+			else addEventListener(Event.ADDED_TO_STAGE, init);
+		}
+		
+		private function init(e:Event = null):void {
+			paddle = new Paddle();
+			addChild(paddle);
+			
+			paddle.addEventListener(Event.ENTER_FRAME, update);
+			stage.addEventListener(KeyboardEvent.KEY_UP, onKeyUp);
+			stage.addEventListener(KeyboardEvent.KEY_DOWN, onKeyDown);
+		}
+		
+		private function update(e:Event):void 
+		{
+			if(direction == 1)
+			{
+				this.y--;
+			}
+			else if(direction == 2)
+			{
+				this.y++;
+			}
+		}
+		
+		private function onKeyUp(e:KeyboardEvent):void {
+			if(e.keyCode == 38 && this.y > 0)
+			{
+				direction = 0;
+			}
+			
+			if(e.keyCode == 40)
+			{
+				direction = 0;
+			}
+		}
+		
+		private function onKeyDown(e:KeyboardEvent):void {
+			if(e.keyCode == 38 && this.y > 0)
+			{
+				direction = 1;
+			}
+			
+			if(e.keyCode == 40 && this.y < stage.stageHeight)
+			{
+				direction = 2;
+			}
+		}
+		
+	}
+}

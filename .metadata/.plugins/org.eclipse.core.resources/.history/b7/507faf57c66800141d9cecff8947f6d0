@@ -1,0 +1,19 @@
+package {
+	import flash.events.KeyboardEvent;
+	import flash.display.MovieClip;
+	/**
+	 * @author Djamali
+	 */
+	public class Player {
+		
+		private var paddle:MovieClip;
+		
+		private function moveUp(e:KeyboardEvent):void {
+			
+		}
+		private function moveDown(e:KeyboardEvent):void {
+			
+		}
+		
+	}
+}

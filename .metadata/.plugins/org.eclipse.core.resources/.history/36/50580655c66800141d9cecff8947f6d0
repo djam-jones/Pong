@@ -1,0 +1,18 @@
+package {
+	import flash.display.MovieClip;
+	/**
+	 * @author Djamali
+	 */
+	public class Player {
+		
+		private var paddle:MovieClip;
+		
+		private function moveUp():void {
+			
+		}
+		private function moveDown():void {
+			
+		}
+		
+	}
+}
