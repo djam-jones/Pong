@@ -1,0 +1,8 @@
+package com.powerflasher.SampleApp {
+	import flash.display.Sprite;
+
+	public class Pong extends Sprite {
+		public function Pong() {
+		}
+	}
+}

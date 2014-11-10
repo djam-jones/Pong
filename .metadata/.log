@@ -1,0 +1,218 @@
+!SESSION 2014-11-10 10:27:20.304 -----------------------------------------------
+eclipse.buildId=I20120531-1500
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.powerflasher.fdt.product.product -keyring /Users/Djamali/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.powerflasher.fdt.product.product -keyring /Users/Djamali/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-11-10 10:28:32.942
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.powerflasher.fdt.core 4 4 2014-11-10 11:24:39.197
+!MESSAGE FDT log: No message gotten.
+!STACK 0
+java.lang.NullPointerException
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator$InheritanceVisitor.leaveClassDeclartion(InheritanceProblemGenerator.java:113)
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator$InheritanceVisitor.visitLeave(InheritanceProblemGenerator.java:105)
+	at com.powerflasher.fdt.internal.core.parser.SimpleNode.accept(SimpleNode.java:138)
+	at com.powerflasher.fdt.core.parser.ASCompilationUnit.accept(ASCompilationUnit.java:879)
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator.generateProblems(InheritanceProblemGenerator.java:374)
+	at com.powerflasher.fdt.core.parser.ASCompilationUnit.generateProblems(ASCompilationUnit.java:799)
+	at com.powerflasher.fdt.ui.editor.AbstractFDTEditor$3.run(AbstractFDTEditor.java:700)
+
+!ENTRY com.powerflasher.fdt.core 4 4 2014-11-10 11:24:39.964
+!MESSAGE FDT log: No message gotten.
+!STACK 0
+java.lang.NullPointerException
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator$InheritanceVisitor.leaveClassDeclartion(InheritanceProblemGenerator.java:113)
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator$InheritanceVisitor.visitLeave(InheritanceProblemGenerator.java:105)
+	at com.powerflasher.fdt.internal.core.parser.SimpleNode.accept(SimpleNode.java:138)
+	at com.powerflasher.fdt.core.parser.ASCompilationUnit.accept(ASCompilationUnit.java:879)
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator.generateProblems(InheritanceProblemGenerator.java:374)
+	at com.powerflasher.fdt.core.parser.ASCompilationUnit.generateProblems(ASCompilationUnit.java:799)
+	at com.powerflasher.fdt.ui.editor.AbstractFDTEditor$3.run(AbstractFDTEditor.java:700)
+
+!ENTRY com.powerflasher.fdt.core 4 4 2014-11-10 11:24:40.079
+!MESSAGE FDT log: No message gotten.
+!STACK 0
+java.lang.NullPointerException
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator$InheritanceVisitor.leaveClassDeclartion(InheritanceProblemGenerator.java:113)
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator$InheritanceVisitor.visitLeave(InheritanceProblemGenerator.java:105)
+	at com.powerflasher.fdt.internal.core.parser.SimpleNode.accept(SimpleNode.java:138)
+	at com.powerflasher.fdt.core.parser.ASCompilationUnit.accept(ASCompilationUnit.java:879)
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator.generateProblems(InheritanceProblemGenerator.java:374)
+	at com.powerflasher.fdt.core.parser.ASCompilationUnit.generateProblems(ASCompilationUnit.java:799)
+	at com.powerflasher.fdt.ui.editor.AbstractFDTEditor$3.run(AbstractFDTEditor.java:700)
+
+!ENTRY com.powerflasher.fdt.core 4 4 2014-11-10 11:24:40.637
+!MESSAGE FDT log: No message gotten.
+!STACK 0
+java.lang.NullPointerException
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator$InheritanceVisitor.leaveClassDeclartion(InheritanceProblemGenerator.java:113)
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator$InheritanceVisitor.visitLeave(InheritanceProblemGenerator.java:105)
+	at com.powerflasher.fdt.internal.core.parser.SimpleNode.accept(SimpleNode.java:138)
+	at com.powerflasher.fdt.core.parser.ASCompilationUnit.accept(ASCompilationUnit.java:879)
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator.generateProblems(InheritanceProblemGenerator.java:374)
+	at com.powerflasher.fdt.core.parser.ASCompilationUnit.generateProblems(ASCompilationUnit.java:799)
+	at com.powerflasher.fdt.ui.editor.AbstractFDTEditor$3.run(AbstractFDTEditor.java:700)
+
+!ENTRY com.powerflasher.fdt.core 4 4 2014-11-10 11:24:40.673
+!MESSAGE FDT log: No message gotten.
+!STACK 0
+java.lang.NullPointerException
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator$InheritanceVisitor.leaveClassDeclartion(InheritanceProblemGenerator.java:113)
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator$InheritanceVisitor.visitLeave(InheritanceProblemGenerator.java:105)
+	at com.powerflasher.fdt.internal.core.parser.SimpleNode.accept(SimpleNode.java:138)
+	at com.powerflasher.fdt.core.parser.ASCompilationUnit.accept(ASCompilationUnit.java:879)
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator.generateProblems(InheritanceProblemGenerator.java:374)
+	at com.powerflasher.fdt.core.parser.ASCompilationUnit.generateProblems(ASCompilationUnit.java:799)
+	at com.powerflasher.fdt.ui.editor.AbstractFDTEditor$3.run(AbstractFDTEditor.java:700)
+
+!ENTRY com.powerflasher.fdt.core 4 4 2014-11-10 11:24:40.762
+!MESSAGE FDT log: No message gotten.
+!STACK 0
+java.lang.NullPointerException
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator$InheritanceVisitor.leaveClassDeclartion(InheritanceProblemGenerator.java:113)
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator$InheritanceVisitor.visitLeave(InheritanceProblemGenerator.java:105)
+	at com.powerflasher.fdt.internal.core.parser.SimpleNode.accept(SimpleNode.java:138)
+	at com.powerflasher.fdt.core.parser.ASCompilationUnit.accept(ASCompilationUnit.java:879)
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator.generateProblems(InheritanceProblemGenerator.java:374)
+	at com.powerflasher.fdt.core.parser.ASCompilationUnit.generateProblems(ASCompilationUnit.java:799)
+	at com.powerflasher.fdt.ui.editor.AbstractFDTEditor$3.run(AbstractFDTEditor.java:700)
+
+!ENTRY com.powerflasher.fdt.core 4 4 2014-11-10 11:24:41.133
+!MESSAGE FDT log: No message gotten.
+!STACK 0
+java.lang.NullPointerException
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator$InheritanceVisitor.leaveClassDeclartion(InheritanceProblemGenerator.java:113)
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator$InheritanceVisitor.visitLeave(InheritanceProblemGenerator.java:105)
+	at com.powerflasher.fdt.internal.core.parser.SimpleNode.accept(SimpleNode.java:138)
+	at com.powerflasher.fdt.core.parser.ASCompilationUnit.accept(ASCompilationUnit.java:879)
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator.generateProblems(InheritanceProblemGenerator.java:374)
+	at com.powerflasher.fdt.core.parser.ASCompilationUnit.generateProblems(ASCompilationUnit.java:799)
+	at com.powerflasher.fdt.ui.editor.AbstractFDTEditor$3.run(AbstractFDTEditor.java:700)
+
+!ENTRY com.powerflasher.fdt.core 4 4 2014-11-10 11:24:41.372
+!MESSAGE FDT log: No message gotten.
+!STACK 0
+java.lang.NullPointerException
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator$InheritanceVisitor.leaveClassDeclartion(InheritanceProblemGenerator.java:113)
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator$InheritanceVisitor.visitLeave(InheritanceProblemGenerator.java:105)
+	at com.powerflasher.fdt.internal.core.parser.SimpleNode.accept(SimpleNode.java:138)
+	at com.powerflasher.fdt.core.parser.ASCompilationUnit.accept(ASCompilationUnit.java:879)
+	at com.powerflasher.fdt.core.problems2.InheritanceProblemGenerator.generateProblems(InheritanceProblemGenerator.java:374)
+	at com.powerflasher.fdt.core.parser.ASCompilationUnit.generateProblems(ASCompilationUnit.java:799)
+	at com.powerflasher.fdt.ui.editor.AbstractFDTEditor$3.run(AbstractFDTEditor.java:700)
+
+!ENTRY com.powerflasher.fdt.core 1 1 2014-11-10 11:33:43.391
+!MESSAGE FDT has been configured trusted path: Added /Users/Djamali/Desktop/School Projects[2014]/Project Pong/Pong/bin/ to local trusted path.
+
+!ENTRY com.powerflasher.fdt.core.launch 1 0 2014-11-10 11:33:51.667
+!MESSAGE Could not connect to the player, will try to connect for the next 72000 ms
+!STACK 0
+java.net.SocketTimeoutException: Accept timed out
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:439)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:468)
+	at java.net.ServerSocket.accept(ServerSocket.java:436)
+	at flash.tools.debugger.concrete.PlayerSessionManager.accept(PlayerSessionManager.java:845)
+	at flash.tools.debugger.concrete.PlayerSessionManager.accept(PlayerSessionManager.java:813)
+	at flex.tools.debugger.concrete.AbstractFlexDebugger.waitForPlayer(AbstractFlexDebugger.java:44)
+	at flex.tools.debugger.concrete.FlexDebugger.delayedConnectToPlayer(FlexDebugger.java:114)
+	at flex.tools.debugger.concrete.FlexDebugger$1.run(FlexDebugger.java:104)
+	at java.lang.Thread.run(Thread.java:695)
+
+!ENTRY com.powerflasher.fdt.core.launch 1 0 2014-11-10 11:33:59.827
+!MESSAGE Could not connect to the player, will try to connect for the next 64000 ms
+!STACK 0
+java.net.SocketTimeoutException: Accept timed out
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:439)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:468)
+	at java.net.ServerSocket.accept(ServerSocket.java:436)
+	at flash.tools.debugger.concrete.PlayerSessionManager.accept(PlayerSessionManager.java:845)
+	at flash.tools.debugger.concrete.PlayerSessionManager.accept(PlayerSessionManager.java:813)
+	at flex.tools.debugger.concrete.AbstractFlexDebugger.waitForPlayer(AbstractFlexDebugger.java:44)
+	at flex.tools.debugger.concrete.FlexDebugger.delayedConnectToPlayer(FlexDebugger.java:114)
+	at flex.tools.debugger.concrete.FlexDebugger$1.run(FlexDebugger.java:104)
+	at java.lang.Thread.run(Thread.java:695)
+
+!ENTRY org.eclipse.jface 2 0 2014-11-10 11:34:17.462
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-10 11:34:17.462
+!MESSAGE A conflict occurred for COMMAND+R:
+Binding(COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.RunToLine,Run to Line,
+		Resume and break when execution reaches the current line,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.MakeHandlersGo@66828c9a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(COMMAND+R,
+	ParameterizedCommand(Command(com.powerflasher.fdt.ui.actions.FindReferences,Find References,
+		Search for references of selected element in current project,
+		Category(com.powerflasher.fdt.ui.category.search,Search,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@4dd070a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.powerflasher.fdt.ui.editor.scope,,,system)
+
+!ENTRY org.eclipse.debug.core 4 125 2014-11-10 11:34:43.698
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:255)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:256)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.FilterInputStream.read(FilterInputStream.java:90)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:145)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:135)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:208)
+	at java.lang.Thread.run(Thread.java:695)
+
+!ENTRY com.powerflasher.fdt.core.launch 1 0 2014-11-10 11:37:07.329
+!MESSAGE Could not connect to the player, will try to connect for the next 72000 ms
+!STACK 0
+java.net.SocketTimeoutException: Accept timed out
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:439)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:468)
+	at java.net.ServerSocket.accept(ServerSocket.java:436)
+	at flash.tools.debugger.concrete.PlayerSessionManager.accept(PlayerSessionManager.java:845)
+	at flash.tools.debugger.concrete.PlayerSessionManager.accept(PlayerSessionManager.java:813)
+	at flex.tools.debugger.concrete.AbstractFlexDebugger.waitForPlayer(AbstractFlexDebugger.java:44)
+	at flex.tools.debugger.concrete.FlexDebugger.delayedConnectToPlayer(FlexDebugger.java:114)
+	at flex.tools.debugger.concrete.FlexDebugger$1.run(FlexDebugger.java:104)
+	at java.lang.Thread.run(Thread.java:695)
+
+!ENTRY org.eclipse.debug.core 4 125 2014-11-10 11:37:31.611
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at java.io.FileInputStream.available(Native Method)
+	at java.lang.UNIXProcess$DeferredCloseInputStream.available(UNIXProcess.java:245)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:325)
+	at java.io.FilterInputStream.read(FilterInputStream.java:90)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:145)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:135)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:208)
+	at java.lang.Thread.run(Thread.java:695)
+
+!ENTRY org.eclipse.debug.core 4 125 2014-11-10 11:37:31.782
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:255)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:256)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at java.io.FilterInputStream.read(FilterInputStream.java:90)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:145)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:135)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:208)
+	at java.lang.Thread.run(Thread.java:695)

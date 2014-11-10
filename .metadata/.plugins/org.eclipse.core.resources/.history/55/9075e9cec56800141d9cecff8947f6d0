@@ -1,0 +1,7 @@
+package {
+	/**
+	 * @author Djamali
+	 */
+	public class Player {
+	}
+}

@@ -1,0 +1,8 @@
+package {
+	import flash.display.Sprite;
+	/**
+	 * @author Djamali
+	 */
+	public class Game extends Sprite{
+	}
+}

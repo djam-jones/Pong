@@ -1,0 +1,18 @@
+package {
+	import flash.display.MovieClip;
+	import flash.display.Sprite;
+	/**
+	 * @author Djamali
+	 */
+	public class Game extends Sprite{
+		
+		private var paddlePlayer:MovieClip;
+		private var paddleCPU:MovieClip;
+		private var ball:MovieClip;
+		
+		public function Game() {
+			super();
+			
+		}
+	}
+}
