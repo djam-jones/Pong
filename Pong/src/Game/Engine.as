@@ -1,0 +1,120 @@
+package Game 
+{
+	import flash.display.MovieClip;
+	import Game.Ball.Ball;
+	import Game.Player.Player;
+	/**
+	 * ...
+	 * @author Collin Loot
+	 */
+	public class Engine
+	{
+		public function update(playerOne:Player, playerTwo:Player = null , balls:Vector.<Ball> = null):void
+		{
+			if (playerOne)
+			{
+				playerOne.update();
+			}
+			if (playerTwo)
+			{
+				playerTwo.update();
+			}
+			if (balls)
+			{
+				for (var i:int = balls.length -1; i >= 0; i--)
+				{
+					balls[i].update();
+				}
+			}
+		}
+		
+		public function checkCollision(walls:Vector.<MovieClip>, playerOne:Player, playerTwo:Player = null, balls:Vector.<Ball> = null):void
+		{
+			for (var i:int = walls.length -1; i >= 0; i--)
+			{
+				while(walls[i].hitTestPoint(playerOne.x, playerOne.y - playerOne.height / 2, false))
+				{
+					playerOne.y += 1;
+				}
+				
+				while (walls[i].hitTestPoint(playerOne.x, playerOne.y + playerOne.height / 2 , false))
+				{
+					playerOne.y -= 1;
+				}
+				
+				if (playerTwo)
+				{
+					while(walls[i].hitTestPoint(playerTwo.x, playerTwo.y - playerTwo.height / 2, false))
+					{
+						playerTwo.y += 1;
+					}
+					
+					while (walls[i].hitTestPoint(playerTwo.x, playerTwo.y + playerTwo.height /2, false))
+					{
+						playerTwo.y -= 1;
+					}
+				}
+				if (balls.length > 0)
+				{
+					for (var j:int = balls.length -1; j >= 0; j--)
+					{
+						if (playerOne.hitTestObject(balls[j])) 
+						{
+							var offset:Number = balls[j].y - playerOne.y;
+							var mult:Number = 100 / (playerOne.height / 2) * offset;
+							
+							balls[j].dir.y = mult / 10;
+							
+							//if (balls[j].dir.x > 0)
+							//{
+								//balls[j].dir.x = Math.abs(balls[j].dir.x);
+							//}
+							//else 
+							//{
+								
+							//}	
+							
+							balls[j].dir.x *= -1;
+							while (playerOne.hitTestObject(balls[j]))
+							{
+								balls[j].x++;
+							}
+						}
+						
+						if (playerTwo.hitTestObject(balls[j]))
+						{
+							var offset1:Number = balls[j].y - playerTwo.y;
+							var mult1:Number = 100 / (playerTwo.height / 2) * offset1;
+							
+							balls[j].dir.y = mult1 / 10;
+							trace(balls[j].dir.y);
+						}
+						
+						if (playerTwo.hitTestObject(balls[j]))
+						{
+							balls[j].dir.x *= -1;
+							while(playerTwo.hitTestObject(balls[j]))
+							{
+								balls[j].x -= 1;
+							}
+						}
+						
+						while(walls[1].hitTestPoint(balls[j].x, balls[j].y + 30, true))
+						{
+							// Bot wall
+							balls[j].dir.y *= -1;
+							balls[j].y -= 1;
+						}
+						while(walls[0].hitTestPoint(balls[j].x, balls[j].y - 30, true))
+						{
+							// Top wall
+							balls[j].dir.y = Math.abs(balls[j].dir.y);
+							balls[j].y += 1;
+						}
+					}
+				}
+			}	
+		}
+	}
+
+}

@@ -1,0 +1,68 @@
+package Game.Player 
+{
+	import flash.display.MovieClip;
+	import flash.display.Sprite;
+	import flash.events.Event;
+	import flash.events.KeyboardEvent;
+	import flash.geom.Vector3D;
+	/**
+	 * ...
+	 * @author Collin Loot
+	 */
+	public class Player extends Sprite
+	{		
+		private var dir:Vector3D;
+		private var playerArt :MovieClip;
+		
+		private var upKey:uint;
+		private var downKey:uint;
+		
+		private var speed:Number = 13;
+		//private var speed:Number = 8.5;
+		
+		public function Player(_upKey:uint, _downKey:uint, startX:uint) 
+		{
+			playerArt = new PlayerArt();
+			upKey = _upKey;
+			downKey = _downKey;
+			dir = new Vector3D(0, 0, 0);
+			playerArt.scaleY = 0.2;
+			playerArt.scaleX = 0.2;
+			addChild(playerArt);
+			this.y = 300;
+			this.x = startX;
+		}
+		
+		public function onKeyDown(e:KeyboardEvent):void
+		{
+			if (e.keyCode == upKey)
+			{
+				dir.y = -speed;
+			}
+			else if (e.keyCode == downKey) 
+			{
+				dir.y = speed;
+			}
+		}
+		
+		public function onKeyUp(e:KeyboardEvent):void
+		{
+			//trace("Yolo");
+			if (e.keyCode == upKey)
+			{
+				dir.y = 0;
+			}
+			else if (e.keyCode == downKey)
+			{
+				dir.y = 0;
+			}
+		}
+		
+		public function update():void
+		{
+			this.y += dir.y;
+		}
+		
+	}
+
+}

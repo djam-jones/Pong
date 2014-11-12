@@ -1473,3 +1473,16 @@ Caused by: java.lang.NullPointerException
 	at java.lang.reflect.Method.invoke(Method.java:597)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	... 111 more
+!SESSION 2014-11-12 13:20:26.453 -----------------------------------------------
+eclipse.buildId=I20120531-1500
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.powerflasher.fdt.product.product -keyring /Users/Djamali/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.powerflasher.fdt.product.product -keyring /Users/Djamali/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-11-12 13:22:46.539
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.powerflasher.fdt.core 1 1 2014-11-12 13:28:52.324
+!MESSAGE Apparat plugin default classloader initialized true
